@@ -9,7 +9,7 @@
 
 html, body {
     text-align: justify;  
-  } 
+} 
 
 body {
     margin: 0;
@@ -20,29 +20,28 @@ body {
     font-size: 18px;
     background-color: var(--yellow);
     color: var(--green);
-  }
+}
   
-  h1 {
+h1 {
     text-align: center;
-  }
+}
 
-  #header  {
+.header  {
 
-  }
+}
 
-  #nav-bar {
+.nav-bar {  
     top: 0;
     left: 10;
     right: 10;
-    width: 100vp;
+    width: 100vw; 
     height: 60px;
     background-color: var(--sky);
     padding: 5px;
     border-radius: 10px;
-    box-shadow: 2px 2px (--leaf);
-  }
-
-  #footer  {
+    box-shadow: 2px 2px var(--leaf);
+}
     
-  }
-
+.footer  {
+    
+}
