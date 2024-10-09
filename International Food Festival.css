@@ -1,147 +1,191 @@
-<!DOCTYPE html>
-<html lang="en">
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(34,195,36);
+    background: linear-gradient(0deg, rgba(34,195,36,1) 0%, rgba(253,142,45,0.5803571428571428) 37%, rgba(252,253,45,0.5803571428571428) 90%);
+}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="authors" content="Amir Ouaddah, Anastassia Tarassova & Marisa-Mai Phu">
-  <meta name="description" content="Join us at the 2024 International Food Festival and explore global cuisines.">
-  <meta property="og:title" content="2024 International Food Festival">
-  <meta property="og:description" content="Experience world flavors, cooking demos, and food stalls at the 2024 International Food Festival.">
-  <meta property="og:image" content="festival-banner.jpg">
-  <meta property="og:url" content="https://internationalfoodfestival2024.com">
-  <title>2024 International Food Festival</title>
-  <link rel="stylesheet" href="2024_International_Food_Festival.css">
-</head>
+h1, h2 {
+    color: #2c3e50;
+}
+h1 {
+    font-size: 4rem;
+}
 
-<body>
+h2{
+    font-size: 3rem;
+    font-family: 'Arial', 'Arial Black';
+}
+
+p {
+    color: #34495e;
+    font-size: 1.3rem;
+}
+
+header {
+    background-color: #27ae60;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transitions for smooth effect */
+}
+ 
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 5px 15px;
+    display: block;
+    border-radius: 5px;
+}
+nav ul li:hover {
+    transform: translateY(-5px); /* Move the item up */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+ 
+nav ul li:hover a {
+    background-color: rgb(97, 19, 19);
+}
+
+#hero {
+    padding: 50px;
+    background-color: #ecf0f1;
+    overflow: hidden;
+}
+
+.hero-text {
+    width: 50%;
+    float: left;
+}
+
+.hero-image {
+    width: 50%;
+    float: right;
+}
+
+.cta-button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+#about {
+    padding: 50px;
+    text-align: center;
+}
+
+#schedule {
+    background-color: #ecf0f1;
+    padding: 50px;
+    text-align: center;
+}
+
+#schedule ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#schedule ul li {
+    margin-bottom: 10px;
+}
+
+#vendors {
+    padding: 50px;
+    text-align: center;
+}
+
+.vendor {
+    display: inline-block;
+    width: 400px;
+    margin: 100px;
+    vertical-align: top;
+}
+
+/*.vendor-grid {
+    overflow-x: auto;
+    white-space: nowrap; 
+    padding: 10px 0;
+  }
+ 
+.vendor img {
+    height: 500px;
+    width: 100%; 
+    object-fit: cover; 
+    border-radius: 10px;
+}*/
+
+.vendor img {
+    height: 200px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+#register {
+    background-color: #f1c40f;
+    padding: 50px;
+    text-align: center;
+}
+
+#register form {
+    display: inline-block;
+    text-align: left;
+    width: 300px;
+}
+
+#register input, #register select {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+}
 
 
-<header>
-  <div class="header-container">
-    <h1>2024 International Food Festival</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#schedule">Schedule</a></li>
-        <li><a href="#vendors">Vendors</a></li>
-        <li><a href="#register">Register</a></li>
-        <li><a href="#location">Location</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+#location {
+    padding: 50px;
+    text-align: center;
+}
 
 
-<main>
+#promo-video {
+    background-color: #ecf0f1;
+    padding: 50px;
+    text-align: center;
+}
 
 
-  <section id="hero">
-    <div class="hero-text">
-      <h2>Taste the Flavors of the World</h2>
-      <p>Join us on October 17-20, 2024, for a celebration of international cuisines.</p>
-      <a href="#register" class="cta-button">Register Now</a>
-    </div>
-    <img src="img/img_7.png" alt="Food Festival Image" class="hero-image">
-  </section>
+footer {
+    background-color: darkgrey;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
 
+footer .social-links a {
+    margin: 0 10px;
+}
 
-  <section id="about">
-    <h2>About the Festival</h2>
-    <p>Discover a world of flavors at the 2024 International Food Festival. Featuring over 50 vendors from around the globe, live cooking demonstrations, and cultural performances, this festival is a must-attend for food lovers!</p>
-  </section>
-
-
-  <section id="schedule">
-    <h2>Festival Schedule</h2>
-    <ul>
-      <li><strong>October 17:</strong> 10 AM - Opening Ceremony</li>
-      <li><strong>October 18:</strong> 1 PM - Italian Cooking Demo</li>
-      <li><strong>October 19:</strong> 12 PM - Japanese Cuisine Tasting</li>
-      <li><strong>October 20:</strong> 3 PM - French Pastry Workshop</li>
-
-    </ul>
-  </section>
-
-
-  <section id="vendors">
-    <h2>Participating Vendors</h2>
-    <div class="vendor-grid">
-      <div class="vendor">
-        <img src="img/img_1.png" alt="Italian Food">
-        <p><strong>Italy</strong>: Pasta & Pizza</p>
-      </div>
-      <div class="vendor">
-        <img src="img/img_2.png" alt="Japanese Food">
-        <p><strong>Japan</strong>: Sushi & Ramen</p>
-      </div>
-      <div class="vendor">
-        <img src="img/img_6.png" alt="French Food">
-        <p><strong>France</strong>: Baguette & Cheese</p>
-      </div>
-      <div class="vendor">
-      <img src="img/img_3.png" alt="Indian Food">
-      <p><strong>Indian</strong>: Sushi & Ramen</p>
-    </div>
-      <div class="vendor">
-        <img src="img/img_4.png" alt="Mexican Food">
-        <p><strong>Mexican</strong>: Nachos & Tacos</p>
-      </div>
-      <div class="vendor">
-        <img src="img/img_5.png" alt="Chinese Food">
-        <p><strong>Chinese</strong>: Dumplings & Noodles</p>
-      </div>
-    </div>
-  </section>
-
-
-  <section id="register">
-    <h2>Register for the Festival</h2>
-    <form action="#" method="POST">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="tickets">Number of Tickets</label>
-      <select id="tickets" name="tickets" required>
-        <option value="1">1 Ticket</option>
-        <option value="2">2 Tickets</option>
-        <option value="3">3 Tickets</option>
-        <option value="4">4 Tickets</option>
-      </select>
-
-      <button type="submit" class="cta-button">Register Now</button>
-    </form>
-  </section>
-
-
-  <section id="location">
-    <h2>Event Location</h2>
-    <p>The International Food Festival will be held at Marché Bonsecours, Montréal, QC</p>
-    <iframe src="https://www.google.com/maps/embed?pb=your-map-embed-code" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-  </section>
-
-
-  <section id="promo-video">
-    <h2>Festival Highlights</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-url" title="Festival Highlights" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </section>
-
-</main>
-
-
-<footer>
-  <p>&copy; 2024 International Food Festival. All rights reserved.</p>
-  <div class="social-links">
-    Stay in touch! Follow the us at 
-    <a href="https://about.x.com/en"><img src="x_logo.png" alt="logo of X" width="50" height="50"></a>
-    <a href="https://www.meta.com/ca/"><img src="Meta-Logo.png"  alt="logo of META" width="50" height="50"></a>
-    <a href="https://www.instagram.com/"><img src="ig_logo.jpg"  alt="logo of IG" width="50" height="50"></a>
-    <a href="https://www.tiktok.com/explore?lang=en"><img src="tiktok_logo.png"  alt="logo of TikTok" width="50" height="50"></a>
-  </div>
-</footer>
-
-</body>
-</html>
